@@ -1,0 +1,62 @@
+.jumbotron {
+    background: linear-gradient(to right, #ffffff, #dcdcdc);
+    padding: 120px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .header-content {
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .display-4 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #333;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+    margin-bottom: 20px;
+  }
+  
+  .display-4:hover {
+    transform: scale(1.1);
+    color: #3498db;
+  }
+  
+  h2 {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #777;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+  }
+  
+  h2:hover {
+    transform: scale(1.05);
+    color: #3498db;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .display-4 {
+      font-size: 2.8rem;
+    }
+  
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+  

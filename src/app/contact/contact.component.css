@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .contact-section {
+    text-align: center;
+    padding: 30px 20px;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .contact-header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details p {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .email-link {
+    font-weight: bold;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .email-link:hover {
+    color: #2980b9;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #34495e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #ecf0f1;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 180px;
+    justify-content: center;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+  }
+  
+  .social-link.linkedin {
+    background-color: #0077b5;
+    color: #fff;
+  }
+  
+  .social-link.github {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .social-link .social-icon {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-link:hover .social-icon {
+    transform: scale(1.1);
+  }
+  
+  .social-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .social-links {
+      flex-direction: column;
+      gap: 25px; 
+    }
+  
+    .social-link {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  
+    .contact-header h1 {
+      font-size: 2.2rem;
+    }
+  
+    .contact-header p {
+      font-size: 1rem;
+    }
+  }
+  

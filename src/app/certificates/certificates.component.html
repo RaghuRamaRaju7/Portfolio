@@ -1,0 +1,19 @@
+<div class="container text-center mt-4">
+    <h2 class="mb-4">📜 Certifications</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4" *ngFor="let badge of badges">
+        <div class="card shadow-sm">
+          <img [src]="badge.image" class="card-img-top" alt="Badge">
+        </div>
+      </div>
+    </div>
+  
+    <h2 class="mt-5 mb-4">🛠 Skills</h2>
+    <div class="skills-container">
+      <div class="skill" *ngFor="let skill of skills">
+        <img [src]="skill.icon" alt="{{skill.name}}" />
+        <p>{{skill.name}}</p>
+      </div>
+    </div>
+  </div>
+  

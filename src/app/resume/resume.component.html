@@ -1,0 +1,83 @@
+<div class="container text-center">
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow-lg rounded-pill px-5 py-3 hover-effect">Download PDF Resume</button>
+  
+    <div class="accordion-container">
+      <accordion [isAnimated]="true" class="shadow-lg rounded-lg p-4">
+        <accordion-group [(isOpen)]="isWorkExperienceOpen">
+          <button class="accordion-header d-flex justify-content-between align-items-center w-100" accordion-heading>
+            <div class="btn-link">Work Experience</div>
+            <div class="accordion-icon">
+              <div *ngIf="!isWorkExperienceOpen" style="color:black;">&#62;</div>
+              <div *ngIf="isWorkExperienceOpen" style="color:black;">&#8595;</div>   
+            </div>
+          </button>
+          <div class="accordion-body">
+            <p>As a fresher, I do not have work experience yet. However, I have completed an internship at AIMERS on AI.</p>
+            <ul>
+              <li>Learned about Artificial Intelligence (AI) and different AI models.</li>
+              <li>Developed a chatbot and understood chatbot development concepts.</li>
+              <li>Created a Weather Bot for real-time weather updates.</li>
+              <li>Worked on Image Classification using AI models.</li>
+              <li>Implemented Object Detection techniques.</li>
+              <li>Developed AI-based Comic Generation models.</li>
+            </ul>
+          </div>
+        </accordion-group>
+  
+        <accordion-group [(isOpen)]="isEducationOpen">
+          <button class="accordion-header d-flex justify-content-between align-items-center w-100" accordion-heading>
+            <div class="btn-link">Education</div>
+            <div class="accordion-icon">
+              <div *ngIf="!isEducationOpen" style="color:black;">&#62;</div>
+              <div *ngIf="isEducationOpen" style="color:black;">&#8595;</div>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <p>Currently pursuing 3rd year B.Tech at Godavari Institute of Engineering and Technology (GIET).</p>
+            <p>Completed schooling from 6th to 10th grade at Ravindhra Bharathi School, Rajahmundry, with 10 points.</p>
+            <p>Completed intermediate at Narayana Junior College with 89.98%.</p>
+          </div>
+        </accordion-group>
+  
+        <accordion-group [(isOpen)]="isCertificationOpen">
+          <button class="accordion-header d-flex justify-content-between align-items-center w-100" accordion-heading>
+            <div class="btn-link">Certification</div>
+            <div class="accordion-icon">
+              <div *ngIf="!isCertificationOpen" style="color:black;">&#62;</div>
+              <div *ngIf="isCertificationOpen" style="color:black;">&#8595;</div>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <ul>
+              <li>
+                <img src="assets/java.png" alt="Certification Badge" width="50" height="50" style="vertical-align: middle; margin-right: 15px;">
+                Java Certification
+              </li>
+            </ul>
+          </div>
+        </accordion-group>
+        
+        
+  
+        <accordion-group [(isOpen)]="isSkillsOpen">
+          <button class="accordion-header d-flex justify-content-between align-items-center w-100" accordion-heading>
+            <div class="btn-link">Skills</div>
+            <div class="accordion-icon">
+              <div *ngIf="!isSkillsOpen" style="color:black;">&#62;</div>
+              <div *ngIf="isSkillsOpen" style="color:black;">&#8595;</div>
+            </div>
+          </button>
+          <div class="accordion-body">
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>ANGULAR</li>
+              <li>JAVA</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+        </accordion-group>
+      </accordion>
+    </div>
+  </div>
+  

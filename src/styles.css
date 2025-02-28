@@ -1,0 +1,13 @@
+.container{
+    max-width: 1140px;
+}
+
+.tag{
+    padding: 0 20px;
+    height: fit-content;
+    width: auto;
+    line-height: 30px;
+    border-radius: 25px;
+    background-color: blue;
+    color: white;
+}

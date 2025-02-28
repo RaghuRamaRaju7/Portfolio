@@ -1,0 +1,29 @@
+<div class="container my-5">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 shadow-lg rounded-3 p-4 m-1">
+      <div class="text-center">
+        <h1 class="display-4 text-dark">About Me</h1>
+        <img src="../../assets/portfolio.jpeg" alt="profile" width="256" height="256" class="rounded-circle shadow-sm mb-3">
+        <p class="lead text-muted">Hello, my name is Raghu Rama Raju, and I am a 3rd-year Computer Science Engineering student at Godavari Institute of Engineering and Technology (GIET). I am passionate about technology and continuously work on enhancing my skills in Java. I have earned a certification in Java and enjoy building projects that solve real-world problems.</p>
+      </div>
+    </div>
+    
+    <div class="col-lg-6 col-md-12 shadow-lg rounded-3 p-4 m-1">
+      <div class="text-center">
+        <h2 class="text-primary">Featured Projects</h2>
+        <h4 class="text-dark">{{featuredProject.name}}</h4>
+      </div>
+
+      <carousel>
+        <div *ngFor="let pictures of featuredProject.pictures">
+          <slide>
+            <img src="{{pictures}}" alt="slide" class="d-block w-100 rounded-3 shadow-sm">
+          </slide>
+        </div>
+      </carousel>
+
+      <p class="mt-3 text-muted">{{featuredProject.summary}}</p>
+      <p class="mt-2 text-primary">Visit the Portfolio section to learn more</p>
+    </div>
+  </div>
+</div>
